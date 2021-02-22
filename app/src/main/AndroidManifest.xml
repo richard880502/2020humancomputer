@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.human_computer_interaction_design_final">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:name="com.helper.SampleApp"><!--important-->
+
+        <!--for over level 24 camera provider-->
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="com.example.human_computer_interaction_design_final.fileProvider"
+            android:grantUriPermissions="true"
+            android:exported="false">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
+
+        <!--Verification-->
+        <activity
+            android:name="com.example.facecompare.VerificationMenuActivity"
+            android:label="@string/verification"
+            android:parentActivityName=".MainActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name="com.example.facecompare.FaceVerificationActivity"
+            android:label="@string/face_verification"
+            android:launchMode="singleTop"
+            android:parentActivityName="com.example.facecompare.VerificationMenuActivity"
+            android:screenOrientation="portrait" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
+        </activity>
+        <activity
+            android:name="com.log.VerificationLogActivity"
+            android:label="@string/verification_log"
+            android:parentActivityName="com.example.facecompare.FaceVerificationActivity"
+            android:screenOrientation="portrait" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.facecompare.FaceVerificationActivity" />
+        </activity>
+        <activity
+            android:name="com.example.facecompare.SelectImageActivity"
+            android:label="@string/select_an_image"
+            android:screenOrientation="portrait" />
+
+
+
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Activity_professor_sign_in"
+            android:label="Professor Sign In"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".Activity_student_sign_in"
+            android:label="Student Sign In"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".Activity_professor_sign_up"
+            android:label="Professor Sign Up"
+            android:parentActivityName=".Activity_professor_sign_in" />
+        <activity
+            android:name=".Activity_professor_course"
+            android:label="Professor Course"
+            android:parentActivityName=".Activity_professor_sign_in" />
+        <activity
+            android:name=".Activity_student_sign_up"
+            android:label="Student Sign Up"
+            android:parentActivityName=".Activity_student_sign_in" />
+        <activity
+            android:name=".Activity_student_activity_list"
+            android:label="Student Activity List"
+            android:parentActivityName=".Activity_student_sign_in" />
+        <activity
+            android:name=".Activity_professor_course_history"
+            android:label="Student Activity List"
+            android:parentActivityName=".Activity_professor_course" />
+    </application>
+
+</manifest>

@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "22354810946",
+    "project_id": "human-computer-interacti-d20e1",
+    "storage_bucket": "human-computer-interacti-d20e1.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:22354810946:android:a9165e95ade508e718b5db",
+        "android_client_info": {
+          "package_name": "com.example.human_computer_interaction_design_final"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "22354810946-0vhcoa6e1gti7dqmsdqchh7c2qr55lkd.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.human_computer_interaction_design_final",
+            "certificate_hash": "f1641298133b329c06eec164d7020bed5b626492"
+          }
+        },
+        {
+          "client_id": "22354810946-9qnnafcfjql4mj79o9g418ulsbcltqj3.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBFWBiOE3tmRDUn2jZ0HsP7ub-IYCOeucs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "22354810946-9qnnafcfjql4mj79o9g418ulsbcltqj3.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
