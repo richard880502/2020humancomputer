@@ -81,6 +81,6 @@
 我們的應用程式結合了人臉辨識和 GPS 位置定位技術，並且使用 Firebase 進行後臺管理，提供了一個方便、高效和準確的點名系統，可以幫助教授更好地管理課堂，提高教學效率。
 
 ## 成品demo
-![demo_03](https://user-images.githubusercontent.com/39851279/236450462-2fa46c00-cd38-4bcd-a6ef-8f60faacc539.jpg)  
+![demo_03](https://user-images.githubusercontent.com/39851279/236450462-2fa46c00-cd38-4bcd-a6ef-8f60faacc539.jpg) 
 ![demo_01](https://user-images.githubusercontent.com/39851279/236450348-f3b157a5-b9b3-4e77-8229-232b37088f9c.jpg)
 ![demo_02](https://user-images.githubusercontent.com/39851279/236450564-ad31cebb-ac05-4ca5-bae8-e25032397f30.jpg)
